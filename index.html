@@ -254,6 +254,13 @@
                 <button class="check-btn">检查</button>
                 <div class="feedback"></div>
             </div>
+            
+            <div class="scenario">
+                <div class="scenario-text">4. 你想表达你正在参加一门课程：</div>
+                <input type="text" class="answer-input" data-answer="I'm taking a programming course">
+                <button class="check-btn">检查</button>
+                <div class="feedback"></div>
+            </div>
         </div>
     </div>
 
@@ -326,6 +333,19 @@
                 examples: ["I have a degree in Business Administration", "I have a degree in Psychology"],
                 category: "higher-ed"
             },
+            { 
+                text: "I'm currently taking...in...", 
+                explanation: "表示当前正在学习的课程或项目，'in'后接学校或机构",
+                examples: ["I'm currently taking advanced calculus in university", "I'm currently taking a leadership course at work"],
+                category: "higher-ed",
+                note: "进行时"
+            },
+            { 
+                text: "I'm taking a...course.", 
+                explanation: "表示正在参加某个课程",
+                examples: ["I'm taking a programming course", "I'm taking an online marketing course"],
+                category: "higher-ed"
+            },
             
             // 职业相关表达
             { 
@@ -357,6 +377,23 @@
                 explanation: "说明职位和工作单位",
                 examples: ["I'm a manager at Amazon", "I'm a researcher at the university"],
                 category: "career"
+            },
+            { 
+                text: "I have completed...training.", 
+                explanation: "表示已完成某项培训",
+                examples: ["I have completed professional development training", "I have completed safety training"],
+                category: "career",
+                note: "完成时"
+            },
+            { 
+                text: "I attended...in order to stay current with...changes.", 
+                explanation: "表示参加活动以跟上某领域的变化",
+                examples: [
+                    "I attended a workshop in order to stay current with industry changes",
+                    "I attended a seminar in order to stay current with technology changes"
+                ],
+                category: "career",
+                note: "持续学习"
             },
             
             // 专业表述
@@ -449,3 +486,4 @@
     </script>
 </body>
 </html>
+
